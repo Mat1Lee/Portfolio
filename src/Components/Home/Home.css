@@ -1,0 +1,12 @@
+.img{
+
+}
+
+
+
+.img{
+  background-image: url(../image/h_n.jpg);
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+}
