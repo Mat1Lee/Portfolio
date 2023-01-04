@@ -1,0 +1,17 @@
+
+.contact-left .contact-item{
+  display: flex;
+  gap: 15px;
+}
+.contact-left{
+  position: relative;
+}
+.contact-left::before{
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: aliceblue;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+}

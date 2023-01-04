@@ -24,7 +24,7 @@ function App() {
   return (<>
       <Header></Header>
       <AnimatePresence exitBeforeEnter initial={false}>
-        <Switch location={location}>
+        <Switch history={history} location = {location}>
           <Route exact path='/'>
             <Home></Home>
           </Route>

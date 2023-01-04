@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faMailBulk } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMailBulk,faPhone} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
@@ -27,8 +27,28 @@ const Contact = () => {
       <div style={{minHeight:'100vh'}}>
         <div className="container">
           <div className="row mb-5">
-            <h2 className="brand-text mb-3">Contact Me <span><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></span> </h2>
-            <div className="col-md-8 offset-md-2">
+            <h2 className=" brand-text mb-3">Contact Me <span><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></span> </h2>
+            <div className="contact-left col-md-4">
+              
+                <h1>Get in touch</h1>
+                <p>Fill in the form to start a conversation</p>
+                <div className="contact-item">
+                  <span><FontAwesomeIcon /></span>
+                  <p>82/61 Nguyen Luong Bang Street, Lien Chieu, Da Nang</p>
+                </div>
+                <div className="contact-item">
+                  <span><FontAwesomeIcon icon={faPhone} /></span>
+                  <p>0979259510</p>
+                </div>
+                <div className="contact-item">
+                  <span><FontAwesomeIcon  icon="fa-regular fa-envelope" /></span>
+                  <p>manhnghean183286@gmail.com</p>
+                </div>
+             
+
+            </div>
+            
+            <div className="col-md-6">
               <form className="contact-form" onSubmit={sendEmail}>
                 {/* <input className="form-control" type="hidden" name="contact_number" /> */}
                 <label>Name</label>
@@ -44,18 +64,8 @@ const Contact = () => {
               </form>
             </div>
           </div>
-            <h4 className="brand-text">Other ways to get in touch</h4>
-          <div className="row text-center mt-5 m-5">
-            <div className="col-md-4">
-              <a href="https://www.facebook.com/lee.michael.50702" ><FontAwesomeIcon className="myicon" icon={faFacebook}></FontAwesomeIcon></a>
-            </div>
-            <div className="col-md-4">
-            <a href="sdfsdf"><FontAwesomeIcon className="myicon" icon={faLinkedin}></FontAwesomeIcon></a>
-            </div>
-            <div className="col-md-4">
-            <a href="sdfsdf"><FontAwesomeIcon className="myicon" icon={faTwitter}></FontAwesomeIcon></a>
-            </div>
-          </div>
+            
+       
         </div>
       </div>
     </motion.div>

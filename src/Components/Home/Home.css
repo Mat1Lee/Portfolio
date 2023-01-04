@@ -1,12 +1,126 @@
+.home{
+  overflow: hidden;
+}
+
 .img{
 
 }
+.name-title{
+  font-family: Bree Serif;
+  font-size: 50px;
+  font-weight: 400;
+}
+.art-code {
+  font-family: 'Courier Prime', monospace;
+  font-size: 36px;
+  color: #ffc107;
+  text-shadow: 1px 1px 5px #ffc107;
+}
+.art-code i {
+  font-style: normal;
+  color:rgb(175, 19, 167);
+  text-shadow: none;
+}
+/* .art-code span {
+  color: #fafafc;
+  text-shadow: none;
+} */
+.art-code span:hover {
+  font-style: italic;
+  /* color: var(--color-primary-3); */
+}
+.socialTab{
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(263, 43%, 36%);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.socialTab .button{
+  margin: 20px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+  border-radius: 30px;
+  background-color: rgb(239, 222, 239);
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+/* .socialTab .button:hover{
+  width: 200px;
+} */
+/* Social tab  */
+.socialTab .button:hover{
+  width: 130px;
+}
+.socialTab .button .icon{
+  display: inline-block;
+    width: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 40px;
+    height: 30px;
+    border-radius: 50%;
+}
+.socialTab .button:hover:nth-child(1) .icon .myicon{
+  color:rgb(8, 8, 191);
+}
+.socialTab .button:hover:nth-child(2) .icon .myicon{
+  color:rgb(50, 142, 240);
+}
+.socialTab .button:hover:nth-child(3) .icon .myicon{
+  color:rgba(228, 18, 193, 0.834);
+}
+.socialTab .button:hover:nth-child(4) .icon .myicon{
+  color:rgb(14, 14, 15);
+}
+.socialTab .button:hover:nth-child(1) span{
+  color:rgb(8, 8, 191);
+}
+.socialTab .button:hover:nth-child(2) span{
+  color:rgb(50, 142, 240);
+}
+.socialTab .button:hover:nth-child(3) span{
+color: rgba(228, 18, 193, 0.834);}
+.socialTab .button:hover:nth-child(4) span{
+color:rgb(14, 14, 15);
+}
+.socialTab .button .icon .myicon{
+  font-size: 20px;
+  color: black;
+  line-height: 30px;
+}
 
-
+.socialTab .button span{
+  font-size: 17px;
+  color: #1b3537;
+  font-weight: 400;
+  line-height:30px;
+  margin-left: 10px;
+}
 
 .img{
-  background-image: url(../image/h_n.jpg);
   width: 100%;
   background-size: cover;
   position: absolute;
+}
+
+
+@media (max-width: 1279px) {
+  .home-content-container .art-code{
+    font-size: 30px;
+  }
+  .brand-text{
+    font-size: 40px;
+  }
+}
+@media (max-width: 979px) {
+  .home-content-container .art-code{
+    font-size: 20px;
+  }
+  .brand-text{
+    font-size: 30px;
+  }
 }

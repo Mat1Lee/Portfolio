@@ -12,6 +12,6 @@
 
 /* Style your items */
 .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-  border:1px solid red;
+  border:3px dashed rgb(228, 11, 148);
   margin-bottom: 30px;
 }

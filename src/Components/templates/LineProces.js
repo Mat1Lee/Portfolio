@@ -1,4 +1,5 @@
 import ProgressBar from 'react-bootstrap/ProgressBar'; 
+import { AnimatedLineProgressBar } from '@frogress/line'
 import './Line.css'
 const Lineproces = (props)=> {
   console.log(props.props.rate);
@@ -7,7 +8,8 @@ const Lineproces = (props)=> {
     <div className="line">
       <p>{props.props.skill}</p>
       <div className='skill'>
-        <ProgressBar variant="pink" now={props?.props.rate} label={`${props?.props.rate}%`} />
+        <ProgressBar  now={props?.props.rate} label={`${props?.props.rate}%`} />
+        
       </div>
        
     </div>

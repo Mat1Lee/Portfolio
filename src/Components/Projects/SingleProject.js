@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../../App.css'
 const SingleProject = ({project}) => {
   const {img, title, description,technology, livesite, github } = project;
   return (

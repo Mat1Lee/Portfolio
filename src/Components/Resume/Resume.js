@@ -16,15 +16,17 @@ const Resume = () => {
     },
     {
       skill:'JavaScript',
-      rate:'60',
+      rate:'75',
     },
     {
       skill:'ReactJs',
-      rate:'65',
+      rate:'75',
     },
 
 
   ]
+  const softSkill =['TeamWork','Teachnical communication','Hight adaptable',' High self-study ability']
+  
  
   return (
     <motion.div 
@@ -39,9 +41,8 @@ const Resume = () => {
           <div className="col-md-7">
             <p>
               My expertise are in frontend technologies such as HTML5, CSS, BOOTSTRAP,
-              JAVASCRIPT, REACT. I am comfortable with backend technologies such as NODE,
-              EXPRESS, MONGODB, FIREBASE that allows me to work with a backend team
-              efficiently.<br/><br/>
+              JAVASCRIPT, REACT,FIREBASE 
+              <br/><br/>
               I am a solution-focused
               developer with the ability to develop interactive and responsive websites that
               satisfies a user’s experience.
@@ -51,6 +52,7 @@ const Resume = () => {
               <div className='content mt-3'>
                 <li>Play Football</li>
                 <li>Play Game</li>
+                <li>Play Guitar</li>
                 <li>Listen To Music</li>
                 
               </div>
@@ -62,7 +64,13 @@ const Resume = () => {
             {
               frontendskills.map((item)=> <Lineproces props={item}/>)
             }
-           
+
+            <h4 className="brand-text mt-5">Soft Skills: </h4>
+
+            {
+
+              softSkill.map(item=><li>{item}</li>)
+            }
             
           <button className="btn brand-btn mt-5" style={{width:'40%'}}>Download Resume <span><FontAwesomeIcon icon={faDownload}></FontAwesomeIcon></span></button>
           

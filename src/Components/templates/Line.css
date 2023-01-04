@@ -3,6 +3,10 @@
   text-decoration-color:  rgb(175, 19, 167);
   font-size: 24px;
 }
+.line .skill{
+  /* text: #fff000; */
+  color: #fff000;;
+}
 .line .skill .progress-bar{
   background-color:  rgb(175, 19, 167) !important;
 

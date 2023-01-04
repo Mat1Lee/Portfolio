@@ -5,7 +5,7 @@ body{
   position:relative;
 }
 body::before{
-  background-image: url('./Components/images/bg.jpg');
+  background-image: url('./Components/images/bg1.jpg');
   content:'';
   position: absolute;
   width:100%;
@@ -61,39 +61,7 @@ p, h1{
 .brand-text{
   color: rgb(175, 19, 167);
 }
-/* .my-nav-style li a{
-  position: relative;
-  border-radius: 15px;
-  border:1px solid transparent;
-}
-.my-nav-style li a::before{
- position: absolute;
- content: '';
- width: 100%;
- left: 0;
- 
- bottom: 0;
- height: 4px;
- transform-origin: right;
- background-color: rgb(175, 19, 167);
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-}
-.my-nav-style li a:hover::before{
-  transform-origin: left;
-  transform: scaleX(1);
-  border:1px solid  rgb(175, 19, 167);
-  
-}
- .active{
-  background-color: rgb(255, 0, 81);
-  border-radius: 15px;
-  color:black;
-  bottom: 0;
-  transition: all ease 0.9s;
-  border:1px solid rgb(255, 0, 81);
-  
-} */
+
 
 .my-nav-style li a{
   border-radius: 15px;
@@ -110,8 +78,8 @@ p, h1{
   border:1px solid rgb(175, 19, 167);
 }
 .myicon{
-  font-size: 50px;
-  color:white;
+  font-size: 35px;
+
 }
 .homeicon{
   color:white;
@@ -121,31 +89,7 @@ p, h1{
   color:white;
 }
 
-.service-box{
-  /* border:1px solid rgb(255, 0, 81); */
-  padding:25px;
-  margin-top:20px;
-  position: relative;
-  cursor: pointer;
-}
-.service-box::before{
-  content: '';
-  position:absolute;
-  width: 100%;
-  height: 100%;
-  top:0;
-  left:0;
-  opacity: 0.1;
-  background-image: url('./Components/images/bg.jpg');
-}
-.service-box:hover{
-  background-color: rgb(175, 19, 167);
-  /* border:1px solid rgb(255, 0, 81); */
-  transition: all ease 0.6s;
-}
-.service-box:hover .myicon{
-  color:white;
-}
+
 
 
 .lowskill{

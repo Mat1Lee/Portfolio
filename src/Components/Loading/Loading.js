@@ -1,6 +1,6 @@
 import React from "react";
 import "./Loading.css";
-
+import { PulseLoader } from "react-spinners";
 import { useState, useEffect } from "react";
 
 export default function Loading() {
@@ -8,21 +8,24 @@ export default function Loading() {
   useEffect(() => {
     setTimeout(() => {
       SetLoading(false);
-    }, 800);
+    }, 2000);
   }, []);
   if (loading === true) {
     return (
       <div className="loading">
-        <div className="bubble" />
-        <div className="bubble" />
-        <div className="bubble" />
+        <div class="ring">Loading
+        <span></span>
       </div>
+      </div>
+      
     );
   } else {
     return (
       <>
+        {/* <div className="doneLoadingLeft"/> */}
         <div className="doneLoadingLeft" />
-        <div className="doneLoadingLeft" />
+
+        <div className="doneLoadingMiddle" />
         <div className="doneLoadingRight" />
       </>
     );

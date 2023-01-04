@@ -7,11 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink,
-  useLocation
+  
 } from "react-router-dom";
 
 ReactDOM.render(
