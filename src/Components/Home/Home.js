@@ -99,12 +99,9 @@ const Home = () => {
           </div>
 
           <div className="col-md-6">
-            <div className="img col-md-4">
+            {/* <div className="img col-md-4">
                 <img src="../images/h_n.psd " alt="" />
-            </div>
-
-
-
+            </div> */}
           </div>
 
 

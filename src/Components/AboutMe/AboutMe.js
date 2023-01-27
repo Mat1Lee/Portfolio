@@ -1,6 +1,7 @@
 import { faDesktop, faDownload, faEye, faMobile,faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
+
 import React from 'react';
 import './About.css'
 
@@ -12,8 +13,11 @@ const AboutMe = () => {
       exit={{opacity:0, scale:0.5}}
       transition={{duration: 0.5}}
     >
-    <div className="container pb-5">
-      <div className="row">
+     
+          <div className="container pb-5"> 
+     
+      <div className="row"> 
+    
         <h1 className="brand-text mb-5">About Me</h1>
         <div className="col-md-8">
           <h2 className="text-white mb-3">Frontend Web Developer</h2>
@@ -94,9 +98,13 @@ const AboutMe = () => {
               I can develop fully responsive websites that meets the satisfaction of users with various devices
             </p>
           </div>
-        </div>
+        </div>  
+         
       </div>
+      
     </div>
+   
+  
     </motion.div>
   );
 };

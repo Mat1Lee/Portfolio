@@ -13,7 +13,8 @@ export default function Loading() {
   if (loading === true) {
     return (
       <div className="loading">
-        <div class="ring">Loading
+        <div class="ring">
+          <p className="text">Loading</p>
         <span></span>
       </div>
       </div>
